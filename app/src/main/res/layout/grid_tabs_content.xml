@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:id="@+id/img_user"
+    android:layout_gravity="center"
+    android:scaleType="fitXY"
+
+   />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_weight="0.15">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ME12345678910"
+                android:id="@+id/txt_userid"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textSize="11dp"
+                android:layout_weight="1"
+                android:textColor="@color/app_orange"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Roshni"
+                android:id="@+id/txt_username"
+                android:textAllCaps="true"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:textSize="11dp"
+                android:textColor="@color/app_green"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:gravity="top|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/img_membership"
+                android:background="@drawable/crown"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/img_shortlist"
+                android:background="@drawable/rate_orange"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/img_chat_grid"
+                android:background="@drawable/chat_orange"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_interest"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/button_back_style"
+        android:elevation="3dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/interest_orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/txt_interest_sent"
+            android:text="SEND INTEREST"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+    <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="5dp"
+           android:background="@color/gey_bck">
+
+       </View>
+
+
+</LinearLayout>

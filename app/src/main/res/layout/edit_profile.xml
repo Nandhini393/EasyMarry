@@ -1,0 +1,3374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_tabs_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Your normal content view -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gey_bck"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_green"
+            android:elevation="4dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/menu_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4"
+                    android:gravity="center"
+                    android:text="Edit Profile"
+                    android:textSize="16dp"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.6"
+                        android:background="#e69039"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                          <com.example.easy_marry.Rounded_Imageview
+                                   android:id="@+id/user_image_upload"
+                                   android:layout_width="75dp"
+                                   android:layout_height="75dp"
+                                   android:layout_gravity="center"
+                                   android:layout_margin="15dp"
+                                   android:src="@drawable/default_user" />
+
+                            <Button
+                                android:id="@+id/btn_add_photo"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@color/app_green"
+                                android:text="add photo"
+
+                                android:textAllCaps="true"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.easy_marry.Rounded_Imageview
+
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/view_phone_grey" />
+
+                            <!--  <Button
+                                  android:id="@+id/btn_view_phone"
+                                  style="?android:attr/buttonStyleSmall"
+                                  android:layout_width="100dp"
+                                  android:layout_height="35dp"
+                                  android:layout_gravity="center"
+                                  android:textSize="10dp"
+                                  android:background="@color/app_green"
+                                  android:text="view phone number"
+                                  android:layout_marginRight="5dp"
+                                  android:textAllCaps="true"
+                                  android:textColor="@color/white" />
+      -->
+
+                            <Button
+                                android:id="@+id/btn_view_phone"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@color/app_green"
+                                android:text="edit\n phone number"
+
+                                android:textAllCaps="true"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.easy_marry.Rounded_Imageview
+
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/view_horo_grey" />
+
+                            <Button
+                                android:id="@+id/btn_view_horo"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:background="@color/app_green"
+                                android:text="Edit horoscope"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1.4"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Your profile completeness"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_level_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="30%"
+                                android:textColor="@color/app_orange"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/pg_profile_complete_level"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/progressBar1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:progress="30"
+                            android:progressDrawable="@drawable/progress_bck" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:text="Personal Information"
+                            android:textColor="@color/app_orange"
+                            android:textSize="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/txt_click_abt_you"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:text="Im my own words "
+                                android:textColor="@color/app_green"
+                                android:textSize="15dp" />
+
+
+                            <ImageView
+                                android:id="@+id/img_edit_abt_you"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="30dp"
+                                android:background="@drawable/edit_orange"
+                                android:gravity="right" />
+
+                        </RelativeLayout>
+
+
+                        <!-- <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginTop="5dp"
+                             android:gravity="left"
+                             android:text="I'm very jovial and loving caring person.Loves cooking,long driving,signt seeing."
+                             android:textColor="#6d6d6d"
+                             android:textSize="13dp" />
+     -->
+                        <EditText
+                            android:id="@+id/et_abt_you"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="false"
+                            android:enabled="false"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:gravity="left"
+                            android:text="I'm very jovial and loving caring person.Loves cooking,long driving,signt seeing."
+                            android:textColor="#6d6d6d"
+                            android:textSize="13dp">
+
+                        </EditText>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gey_bck"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_basic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Basic Details"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Name"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_name"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Gender"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_gender"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Age"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_age"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Height"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_height"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Weight"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_weight"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Marital status"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_martial_status"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:id="@+id/ll_uchild"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Childrens"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_child"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Mother tongue"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_mother_ton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Physical status"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_physical_stat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Body type"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_body_type"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Profile created by"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_profile_create"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Eating habits"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_eating_habits"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Drinking habits"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_drinking"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Smoking habits"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_smoke"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_religion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Religious Information"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Religion"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_religion"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:id="@+id/ll_gothram"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Gothram"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_gothram"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Caste"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_caste"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Sub-caste"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_sub_caste"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Zodiac Sign"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_zodiac"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Star"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_star"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Dhosham"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_dhosham"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_prof_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Professional Information"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Qualification"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_qualif"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Qualification in detail"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_qualif_det"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Occupation"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_occupation"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Employed in"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_empl_in"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Annual income"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_annual_income"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="2dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_location"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Location"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Country"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_country"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="State"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_state"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="City"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_city"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Citizenship"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_citizen"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="2dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_family_det"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Family Details"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Family values"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_fam_val"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Family type"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_fam_type"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Family status"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_fam_stat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Father's occupation"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_father_occ"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Mother's occupation"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_mother_occ"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/txt_click_hobbies"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:paddingRight="20dp"
+                                        android:text="Hobbies and interest"
+                                        android:textColor="@color/app_green"
+                                        android:textSize="15dp" />
+
+
+                                    <ImageView
+                                        android:id="@+id/img_edit_hobbies"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginRight="30dp"
+                                        android:background="@drawable/edit_orange"
+                                        android:gravity="right" />
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:id="@+id/et_my_hobbies"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:cursorVisible="false"
+                                    android:enabled="false"
+                                    android:gravity="left"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:text="cooking, net surfing"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="13dp"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/gey_bck">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="Partner Preference"
+                            android:textColor="@color/app_orange"
+                            android:textSize="15dp" />
+
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gey_bck"
+
+                            >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_partner_basic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Basic Preference"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Groom's Age"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_age"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Height"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_height"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Weight"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_weight"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Marital status"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_martial_status"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:id="@+id/ll_pchild"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Childrens"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_child"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Mother tongue"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_mother_ton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Physical status"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_physical_stat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Body type"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_body_type"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                              <!--  <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Profile created by"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_profile_create"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>-->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Eating habits"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_eating_habits"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Drinking habits"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_drinking"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Smoking habits"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_smoke"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_partner_religious"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Religious Information"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Religion"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_religion"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Gothram"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_gothram"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Caste"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_caste"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Sub-caste"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_sub_caste"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Zodiac sign"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_zodiac"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Star"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_martial_star"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Dhosham"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_dhosham"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_partner_professional"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Professional Information"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Qualification"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_qualif"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Employee in"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_emplyin_det"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Occupation"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_occupation"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Annual income"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_annual_income"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_partner_location"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Location"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Country"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_country"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="State"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_state"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="City"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_city"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Citizenship"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_citizen"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="#dcdcdc"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_click_partner_family_det"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:drawableRight="@drawable/edit_orange"
+                                    android:gravity="left"
+                                    android:paddingRight="20dp"
+                                    android:text="Family Details"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="15dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Family values"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_fam_val"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Family type"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_fam_type"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Family status"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_fam_stat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Father's occupation"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_father_occ"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Mother's occupation"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_daily_recom_groom_mother_occ"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Content"
+                                        android:textColor="#929292"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Your drawer view. This can be any view, LinearLayout
+       is just an example. As we have set fitSystemWindows=true
+       this will be displayed under the status bar. -->
+
+    <LinearLayout
+        android:id="@+id/llayslider"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#f8f8f8"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/ll_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.7"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+           <com.example.easy_marry.Rounded_Imageview
+                android:id="@+id/user_image"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                 />
+
+           <!-- <FrameLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="right" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_bor"
+                    android:layout_gravity="right" />
+            </FrameLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:text="Roshni"
+                    android:textColor="@color/app_orange"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ME123456"
+                        android:textColor="@color/app_green"
+                        android:textSize="15dp" />
+
+                   <!-- <ImageView
+                        android:id="@+id/img_edit_my_profile"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/edit_grey" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Your profile completeness"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="30%"
+                    android:id="@+id/txt_menu_progress_id"
+                    android:textColor="@color/app_orange"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pg_menu_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/pg_profile_complete_level"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:progressDrawable="@drawable/progress_bck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2.4"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_parent_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+
+                    android:layout_marginTop="10dp"
+
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/my_matches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_my_matches_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/my_matches_grey" />
+
+                        <TextView
+                            android:id="@+id/txt_mymatches"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="My Matches"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/mail_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_mail_box_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/mail_box_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_mailbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Mail Box"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/daily_recom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_daily_recom_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/daily_recom_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_dailyrecom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Daily Recommendation"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_edit_profile_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/edit_profile_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_editprofile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Edit Profile"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/upgrade_acc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_upgrade_acc_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/upgrade_acc_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_upgrade_acc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Upgrade Account"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_settings_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/settings_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Settings"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_feedback_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/feed_back_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Feedback"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_search_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/search_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Search"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gey_bck"></View>
+
+                    <LinearLayout
+                        android:id="@+id/add_horo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/img_add_horo_grey"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/add_horo_grey" />
+
+
+                        <TextView
+                            android:id="@+id/txt_add_horo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Add Horoscope"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_rate"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@color/app_orange"
+                        android:text="RATE OUR APP"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/txt_terms"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/terms" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_copyright"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="copyright@2016"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:text="easy-marry.com"
+                            android:textColor="@color/app_orange"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/app_green"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/crown_whitee" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upgrade Now!!!"
+
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speed up your partner search"
+                    android:textColor="@color/white"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

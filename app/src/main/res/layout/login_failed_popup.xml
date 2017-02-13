@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:src="@drawable/homelogo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/span1"
+                android:textSize="15dp"
+                android:text="Login Failed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:text="Please check your email and password"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:text="ok"
+            android:layout_gravity="center"
+            android:id="@+id/btn_login_again"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_marginBottom="20dp"
+            android:background="@color/app_orange"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

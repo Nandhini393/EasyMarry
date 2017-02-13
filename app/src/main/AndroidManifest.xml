@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easy_marry">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Screen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeScreen"></activity>
+
+
+        <activity
+            android:name=".SignInPage"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name=".swibetabs.Matches"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ForgetPassword"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".VerifyMobileNumber"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ChangePassword"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".BlockedProfiles"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Horoscope.AddHoroscope"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Horoscope.ViewGalleryImage"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfile"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Horoscope.EditHoroscope"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Horoscope.ViewHoroscope"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Feedback"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfileBasic"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfileBasicTest"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".QuickSearch"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".SearchResults"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".MembershipTabs.MembershipTabs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".DailyRecomViewProfie"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".DailyRecommSkip"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Account"
+            android:windowSoftInputMode="stateHidden"></activity>c
+        <activity
+            android:name=".Notification"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".PaymentTabs.PaymentTabs"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".PaymentMode"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Settings"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".CallPreference"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".TellUsMore"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".MessengarTabs.MessangerTabs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".MailInboxTabs.MailInboxTabs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".MailInboxTabs.MailboxNewTabs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".PartnerPreference"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".DailyRecommList"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".ChatNow"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegOne"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegOneTest"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegTwo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegThree"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegFour"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegFive"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.UserRegSixAddPhoto"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.PartnerRegOne"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.PartnerRegTwo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.PartnerRegThree"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Registration.PartnerRegFour"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfileReligion"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfilePhoneNumber"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfileFamilyDetails"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfileProfessional"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".EditProfiles.EditProfileLocation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".customgallery.GalleryAlbumActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".customgallery.ShowAlbumImagesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".TermsAndConditions"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".FilterPage"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <!--  <receiver android:name=".genericclasses.MyBroadcastReceiver">
+              <intent-filter>
+                  <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+              </intent-filter>
+          </receiver>-->
+        <service
+            android:name=".GCM.PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.aryvart.utician" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

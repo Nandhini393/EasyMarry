@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gey_bck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_margin="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:hint="Matrimony ID"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:drawableRight="@drawable/search_green"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_single"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tab_one_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+            <GridView
+
+                android:id="@+id/tab_one_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="200dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

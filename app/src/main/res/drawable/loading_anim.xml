@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/y_1"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_2"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_3"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_4"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_5"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_6"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_7"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_8"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_9"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_10"
+        android:duration="500" />
+
+    <item
+        android:drawable="@drawable/y_11"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_12"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_13"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_14"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_15"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_16"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_17"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_18"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_19"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/y_20"
+        android:duration="500" />
+
+
+</animation-list>
+

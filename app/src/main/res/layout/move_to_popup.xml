@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp" android:layout_width="250dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txt_name"
+        android:textSize="15dp"
+        android:textColor="@color/app_green"
+        android:text="Move To"
+        android:gravity="center"
+           android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#c0c0c0"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="New"
+            android:id="@+id/move_to_new"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#c0c0c0"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:id="@+id/move_to_read"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Read and not Replied"
+
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#c0c0c0"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:id="@+id/move_to_accept"
+            android:paddingTop="5dp"
+            android:text="Accepted"
+
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#c0c0c0"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:text="Replied"
+            android:gravity="center"
+            android:id="@+id/move_to_reply"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#c0c0c0"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Not interested"
+android:id="@+id/move_to_not_interest"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#c0c0c0"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Trash"
+            android:id="@+id/move_to_trash"
+android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

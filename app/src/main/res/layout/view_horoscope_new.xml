@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <!-- Your normal content view -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gey_bck"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+
+        android:elevation="4dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right|center"
+                android:layout_weight="0.3"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.4"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="View Horoscope"
+                android:textSize="16dp"
+                android:id="@+id/txt_title"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="left"
+                android:layout_height="20dp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:numColumns="2"
+            android:layout_height="match_parent"
+            android:id="@+id/gv_horo_list" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/ll_empty"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="35dp"
+                android:background="@drawable/errr_msg"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/txt_tab_error_msg"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:fontFamily="monospace"
+                android:text="No Horoscope Available"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

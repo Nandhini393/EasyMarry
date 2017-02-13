@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="15dp"
+        android:id="@+id/img_close_dialog"
+        android:src="@drawable/close_grey"
+        android:layout_gravity="right"
+        android:layout_height="15dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center|left"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Details Of"
+            android:id="@+id/txt_one"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arjun(EM40004)"
+            android:paddingLeft="5dp"
+            android:textColor="@color/app_green"
+            android:layout_toRightOf="@+id/txt_one"
+            android:id="@+id/txt_contact_det"
+            android:textSize="11dp"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primary mobile number"
+        android:gravity="left|center"
+        android:textSize="12dp"
+
+        android:layout_marginTop="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2.6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textSize="12dp"
+
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12dp"
+
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9878675674"
+            android:textSize="12dp"
+            android:id="@+id/txt_mobile_no"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2.6"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:gravity="left|center"
+            android:textSize="12dp"
+
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12dp"
+
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:id="@+id/txt_cont_num"
+            android:layout_height="wrap_content"
+            android:text="9878675674"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#c0c0c0">
+
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parents Contact Details"
+        android:gravity="left|center"
+        android:textSize="12dp"
+android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2.6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textSize="12dp"
+
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12dp"
+
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9878675674"
+            android:textSize="12dp"
+            android:id="@+id/txt_par_mobile_no"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2.6"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+
+            android:layout_height="wrap_content"
+            android:text="Convenient time to call"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12dp"
+
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Not Available"
+            android:textSize="12dp"
+            android:id="@+id/txt_conv_time"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

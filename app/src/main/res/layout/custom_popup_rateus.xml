@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayalertDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edittext_style"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rate_span"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="How was your experience with our app?"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+            <RatingBar
+                android:id="@+id/rate_app"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:isIndicator="false"
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn_later"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/app_green"
+                    android:text="later"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_rate_now"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/app_orange"
+                    android:text="rate it now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/easy_marry" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

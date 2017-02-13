@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EasyMarry</string>
+    <string name="action_settings">Settings</string>
+    <string name="login"><u>login</u></string>
+    <string name="terms"><u>Terms and conditions</u></string>
+    <string name="google_api_key">AIzaSyABtyeYPIAD9yGvFV0APC46YdsVd5r-kys</string>
+    <string name="facebook_app_id">303601036687959</string>
+    <string name="facebook_name">Facebook</string>
+</resources>

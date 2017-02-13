@@ -1,0 +1,152 @@
+<!-- The important thing to note here is the added fitSystemWindows -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ECF7E9"
+
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:id="@+id/classic_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECF7E9"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="Classic "
+                    android:textColor="@color/app_green"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txt_package"
+                    android:src="@drawable/crown" />
+
+                <ImageView
+                    android:id="@+id/down_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/down_bold"
+                    android:gravity="right" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="left"
+                android:text="Rs.4009"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_per_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="left"
+                android:text="Classic"
+                android:textColor="#808080"
+                android:textSize="11dp"
+               />
+
+            <LinearLayout
+                android:id="@+id/classic_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:background="@color/gey_bck"></View>
+
+                <LinearLayout
+                    android:id="@+id/llayNeedtoInflate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left"
+                            android:src="@drawable/small_tick_orange" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text="Content"
+                            android:textColor="#7d7f7a"
+                            android:textSize="13dp" />
+                    </LinearLayout>-->
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_subscribe"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/app_orange"
+                    android:text="subscribe"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

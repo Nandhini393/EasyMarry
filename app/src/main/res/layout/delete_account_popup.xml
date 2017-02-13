@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/homelogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:text="DELETE ACCOUNT"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/tick_orange" />
+
+            <TextView
+                android:id="@+id/span_text_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Why do you want to delete your account ?"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/radio_married"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+android:layout_marginLeft="10dp"
+                    android:text="Married" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/radio_mar_fixed"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="false" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="Marriage fixed" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/radio_other_reason"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="false" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="Other reason" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_del_reason"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_border2"
+            android:gravity="top"
+            android:visibility="gone"
+            android:hint="Add you reasons."
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:textColorHint="#c0c0c0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_green"
+                android:text="cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_orange"
+                android:text="delete"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

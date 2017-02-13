@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gey_bck"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_green"
+
+            android:elevation="4dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="right"
+                    android:layout_height="20dp"
+                    android:id="@+id/img_back"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Terms and conditions"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="left"
+                    android:layout_height="20dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_terms_and_conditions"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

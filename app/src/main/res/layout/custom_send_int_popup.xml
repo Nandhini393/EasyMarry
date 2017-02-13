@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayalertDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+
+            android:background="@drawable/edittext_style">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_interest"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_marginTop="50dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:hint="Enter your text as , Hi...I'm interested in you"
+                android:background="@drawable/edit_single"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:text="send"
+                android:layout_gravity="center"
+                android:id="@+id/btn_sent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_marginBottom="20dp"
+                android:background="@color/app_orange"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/easy_marry" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

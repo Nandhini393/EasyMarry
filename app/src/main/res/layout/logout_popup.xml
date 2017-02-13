@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:src="@drawable/homelogo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_gravity="left"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+
+            android:text="LOG OUT"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/tick_orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/span_text_log"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_gravity="center"
+                android:text="Do you want to log out now ?"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:text="cancel"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_continue"
+                android:layout_marginBottom="30dp"
+                android:background="@color/app_green"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:text="log out"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_continue"
+                android:layout_marginBottom="30dp"
+                android:background="@color/app_orange"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

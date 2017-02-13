@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:src="@drawable/homelogo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_interest"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:hint="Enter your text as , Hi...I'm interested in you"
+            android:background="@drawable/edit_single"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:text="sent"
+            android:layout_gravity="center"
+            android:id="@+id/btn_sent"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_marginBottom="20dp"
+            android:background="@color/app_orange"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

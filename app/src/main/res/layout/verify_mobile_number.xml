@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gey_bck"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_green"
+
+            android:elevation="4dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="right"
+                    android:layout_height="20dp"
+                    android:id="@+id/img_ver_back"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Verify mobile number"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="left"
+                    android:layout_height="20dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+       <ScrollView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:background="@color/white"
+           android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+
+                   android:orientation="vertical"
+                   android:paddingBottom="50dp">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:padding="10dp"
+                       android:layout_marginTop="5dp"
+                       android:text="You are now registered with easy marry."
+                       android:textColor="@color/app_green"
+                       android:textSize="14dp" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:padding="10dp"
+                       android:text="To login, use your E-mail Id"
+                       android:textColor="#929292"
+                       android:textSize="14dp" />
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:padding="15dp"
+                       android:text="Verify your mobile number now to activate"
+                       android:textColor="@color/app_orange"
+                       android:textSize="16dp" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:background="@drawable/edit_text_border"
+                       android:orientation="vertical"
+                       android:paddingBottom="30dp"
+                       android:paddingTop="20dp">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:text="Verify through SMS"
+                           android:textColor="@color/black"
+                           android:textSize="18dp" />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:padding="5dp"
+                           android:id="@+id/txt_span1"
+                           android:text="An SMS with verification PIN has been sent to"
+                           android:textColor="#929292" />
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:padding="5dp"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/txt_phone_num"
+                               android:text="9489847986"
+                               android:textColor="#000" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text=" - Edit Number"
+                               android:id="@+id/txt_edit_phone_num"
+                               android:textColor="@color/app_green" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:padding="5dp"
+                           android:orientation="horizontal">
+
+                           <EditText
+                               android:layout_width="100dp"
+                               android:layout_height="35dp"
+                               android:paddingLeft="5dp"
+                               android:singleLine="true"
+                               android:id="@+id/et_otp"
+                               android:textCursorDrawable="@drawable/cursor_color"
+                               android:background="@drawable/edit_text_border2" />
+
+                           <Button
+                               android:layout_width="wrap_content"
+                               android:layout_height="35dp"
+                               android:id="@+id/btn_verifyy"
+                               android:layout_marginLeft="20dp"
+                               android:background="@color/app_orange"
+                               android:text="VERIFY"
+                               android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                               android:textColor="@color/white" />
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="20dp"
+                       android:orientation="horizontal">
+
+                       <View
+                           android:layout_width="80dp"
+                           android:layout_height="1dp"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="10dp"
+                           android:background="#929292"></View>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/edit_text_border_circle"
+                           android:padding="10dp"
+                           android:textColor="#000"
+                           android:text="OR" />
+
+                       <View
+                           android:layout_width="80dp"
+                           android:layout_height="1dp"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="20dp"
+                           android:background="#929292"></View>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:layout_marginBottom="20dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="10dp"
+                       android:background="@drawable/edit_text_border"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:padding="10dp"
+                           android:text="Verify through Missed Call"
+                           android:textColor="@color/black"
+                           android:textSize="18dp" />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:padding="5dp"
+                           android:textSize="13dp"
+                           android:text="Give a missed call to 98789567894(Toll free)from"
+                           android:textColor="#929292" />
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:textSize="13dp"
+
+                               android:layout_marginBottom="30dp"
+                               android:text="your mobile "
+                               android:textColor="#929292" />
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:textSize="13dp"
+                               android:id="@+id/txt_span2"
+                               android:layout_marginBottom="30dp"
+                               android:paddingLeft="2dp"
+                               android:paddingRight="2dp"
+                               android:textColor="@color/black" />
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:textSize="13dp"
+                               android:paddingLeft="2dp"
+                               android:layout_marginBottom="30dp"
+                               android:text="to verfiy your number."
+                               android:textColor="#929292" />
+                       </LinearLayout>
+
+
+
+                   </LinearLayout>
+               </LinearLayout>
+           </RelativeLayout>
+
+       </ScrollView>
+
+    </LinearLayout>

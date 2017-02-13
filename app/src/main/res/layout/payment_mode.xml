@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gey_bck"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+
+        android:elevation="1dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <ImageView
+                android:id="@+id/img_not_back"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.3"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4"
+                android:gravity="center"
+                android:text="Payment Mode"
+android:textSize="16dp"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/classic_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/app_green"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txt_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classic "
+                    android:textColor="@color/white"
+
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/txt_package"
+
+                    android:src="@drawable/crown" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Rs.4009"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_per_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Rs.400/month"
+                    android:textColor="#bbbeb7"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txt_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:text="You have to pay RS.4999"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/classic_header"
+            android:layout_marginTop="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="Choose a payment option"
+                        android:textColor="@color/app_orange"
+                        android:textSize="15dp" />
+
+                   <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+
+                        android:elevation="3dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_credit_card"
+                            android:background="#f2f7f0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+
+                                android:gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:text="Credit Card"
+                                android:textColor="@color/app_green"
+                                android:textSize="15dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Visa Mastercard and American Express "
+                                    android:textColor="#9b9483"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="12dp" />
+
+
+                                <ImageView
+                                    android:id="@+id/down_arrow1"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/right"
+                                    android:gravity="right" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="3dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_debit_card"
+                            android:background="#f2f7f0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Debit Card"
+                                android:textColor="@color/app_green"
+                                android:textSize="15dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Visa Mastercard and Mastero"
+                                    android:textColor="#9b9483"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="12dp" />
+
+
+                                <ImageView
+                                    android:id="@+id/down_arrow2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/right"
+                                    android:gravity="right" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#f2f7f0"
+                        android:elevation="3dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_net_banking"
+                            android:background="#f2f7f0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Net Banking"
+                                android:textColor="@color/app_green"
+                                android:textSize="15dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="All major banks(ICIC,Indian bank etc)"
+                                    android:textColor="#9b9483"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="12dp" />
+
+
+                                <ImageView
+                                    android:id="@+id/down_arrow"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/right"
+                                    android:gravity="right" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#f2f7f0"
+                        android:elevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="#f2f7f0"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Free Doorstep Collection"
+                                android:textColor="@color/app_green"
+                                android:textSize="15dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cash,cheque,DD"
+                                    android:textColor="#9b9483"
+
+                                    android:textSize="12dp" />
+
+
+                                <ImageView
+                                    android:id="@+id/down_arrow4"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/right"
+                                    android:gravity="right" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="Need help with payments?"
+                            android:textColor="@color/app_green"
+                            android:textSize="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_toRightOf="@+id/txt_package"
+
+                                android:src="@drawable/call_orange" />
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:paddingLeft="5dp"
+                                android:text="9897865784"
+                                android:textColor="@color/app_green"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/txt_package"
+                                android:src="@drawable/chat_orange_fill" />
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:paddingLeft="5dp"
+                                android:text="Chat Now"
+                                android:textColor="@color/app_green"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
