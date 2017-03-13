@@ -222,7 +222,7 @@ public class ListDrawerPartnerAdapter extends BaseAdapter {
                         hsMap.remove(listDrawerBean.getStr_list_items_id());
                         Log.i("NN", "hash-> : " + hsMap);
                         Log.i("NN", "hash_removed-> : " + listDrawerBean.getStr_list_items_id());
-                        myInterface.filter_Check(hsMap, listDrawerBean.getStr_list_items_id());
+                        myInterface.filter_Check(hsMap, listDrawerBean.getStr_list_items_id(),"");
                     }
                 }
 

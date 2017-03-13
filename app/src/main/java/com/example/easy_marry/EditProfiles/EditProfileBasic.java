@@ -1274,7 +1274,7 @@ public class EditProfileBasic extends Activity implements MyInterface {
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal, String strRemovedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal, String strRemovedVal, String strIdentify) {
         return null;
     }
 
@@ -1354,6 +1354,7 @@ public class EditProfileBasic extends Activity implements MyInterface {
                                     public void onClick(View v) {
                                         startActivity(new Intent(EditProfileBasic.this, EditProfile.class));
                                         finish();
+                                        altDialog.dismiss();
                                     }
                                 });
                                 altDialog.show();

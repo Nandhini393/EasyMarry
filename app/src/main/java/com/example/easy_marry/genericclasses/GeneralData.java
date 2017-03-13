@@ -103,7 +103,7 @@ public class GeneralData {
     public void showAlertDialog(final Context context, String strTitle, String strContent) {
         View itemView1;
         final AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setCancelable(true);
+        builder.setCancelable(false);
         itemView1 = LayoutInflater.from(context)
                 .inflate(R.layout.progress_loading_popup, null);
        altDialog = builder.create();

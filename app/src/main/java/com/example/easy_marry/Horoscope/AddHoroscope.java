@@ -1174,7 +1174,6 @@ public class AddHoroscope extends Activity implements View.OnClickListener {
                     ImgI.setImage(mCurrentPhotoPath);
                     alBitmap.add(ImgI);
 
-
                     cGAdapter = new Custom_GridView_Adapter(ctx, alBitmap);
                     gV.setAdapter(cGAdapter);
 

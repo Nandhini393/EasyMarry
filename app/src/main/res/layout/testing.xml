@@ -4,31 +4,28 @@
         android:id="@+id/list_drawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        android:background="#ededed"
         android:fitsSystemWindows="true"
         android:orientation="vertical">
 
-<FrameLayout
-    android:layout_width="110dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/timerValue"
+            android:layout_gravity="center_horizontal" />
 
-    android:layout_height="120dp">
-
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/girl6"
-        android:scaleType="fitXY"
-        android:id="@+id/img_girl"
-        android:layout_gravity="right" />
-    <ImageView
+        android:text="New Button"
+        android:id="@+id/startButton"
+        android:layout_gravity="center_horizontal" />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/white_bor"
-        android:layout_gravity="right" />
-</FrameLayout>
-
-
-    </LinearLayout>
+        android:text="New Button"
+        android:id="@+id/pauseButton"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
 
 

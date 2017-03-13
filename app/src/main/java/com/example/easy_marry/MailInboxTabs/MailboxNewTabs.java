@@ -1106,11 +1106,7 @@ public class MailboxNewTabs extends AppCompatActivity implements View.OnClickLis
                 Map<String, String> params = new HashMap<String, String>();
 
 //username=sathish@ansjad.com&password=testing
-
                 Log.e("v_row", str_row_id);
-
-
-
                 params.put("rowid", str_row_id);
 
 

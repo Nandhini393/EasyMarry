@@ -46,7 +46,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="left"
                     android:text="id"
-                    android:textStyle="bold"
                     android:textColor="@color/app_orange"
                     android:textSize="14dp" />
 

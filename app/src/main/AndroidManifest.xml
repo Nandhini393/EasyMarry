@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
-
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -26,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Splash_Screen"
+            android:name=".TestClass"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden">
@@ -224,6 +223,14 @@
             android:name=".FilterPage"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".FilterPageTest"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".DailyRecommSkip_Test"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
         <!--  <receiver android:name=".genericclasses.MyBroadcastReceiver">
               <intent-filter>
                   <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -236,6 +243,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </service>
+        <service android:name=".CounterService" />
 
         <receiver
             android:name="com.google.android.gms.gcm.GcmReceiver"

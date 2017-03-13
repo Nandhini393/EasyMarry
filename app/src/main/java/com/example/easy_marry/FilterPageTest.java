@@ -536,7 +536,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -596,7 +596,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -657,7 +657,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -781,7 +781,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -839,7 +839,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -897,7 +897,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -955,7 +955,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1013,7 +1013,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1070,7 +1070,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1131,7 +1131,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1191,7 +1191,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1268,7 +1268,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1327,7 +1327,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1387,7 +1387,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1446,7 +1446,7 @@ GridView gd_lang;
                             }
                         }
 
-                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click);
+                        drawerFilterAdapter = new ListDrawerFilterAdapter(context, filteredList, (MyInterface) context, "", str_click,"");
                         list_drawer.setAdapter(drawerFilterAdapter);
                         drawerFilterAdapter.notifyDataSetChanged();
                     }
@@ -1879,7 +1879,7 @@ GridView gd_lang;
                                     SpinnerAdapter spinadapters = new SpinnerAdapter(context, android.R.layout.simple_spinner_item, beanArrayList, (MyInterface) context, "category", "sp_to");
                                     sp_to.setAdapter(spinadapters);
                                 } else {
-                                    drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "height", str_click);
+                                    drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "height", str_click,"");
                                     list_drawer.setAdapter(drawerFilterAdapter);
                                     drawerFilterAdapter.notifyDataSetChanged();
                                 }
@@ -1984,7 +1984,7 @@ GridView gd_lang;
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal, String strIdentify) {
 
         for (Map.Entry<String, JSONObject> entry : hsFilterGmap.entrySet()) {
             if (entry.getKey().equals(strVal)) {
@@ -2020,11 +2020,11 @@ GridView gd_lang;
                 sp_to.setAdapter(spinadapters);
             } else {
                 if (str_list_name.equalsIgnoreCase("eat_habit")) {
-                    drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "eat_habit", str_click);
+                    drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "eat_habit", str_click,"");
                     list_drawer.setAdapter(drawerFilterAdapter);
                     drawerFilterAdapter.notifyDataSetChanged();
                 } else {
-                    drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "", str_click);
+                    drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "", str_click,"");
                     list_drawer.setAdapter(drawerFilterAdapter);
                     drawerFilterAdapter.notifyDataSetChanged();
                 }
@@ -2105,7 +2105,7 @@ GridView gd_lang;
                                     }
                                 }
 
-                                drawerFilterAdapter = new ListDrawerFilterAdapter(context, return_beanArrayList, (MyInterface) context, "", str_click);
+                                drawerFilterAdapter = new ListDrawerFilterAdapter(context, return_beanArrayList, (MyInterface) context, "", str_click,"");
                                 list_drawer.setAdapter(drawerFilterAdapter);
                                 drawerFilterAdapter.notifyDataSetChanged();
 

@@ -674,7 +674,7 @@ android:id="@+id/radio_eat_all"
 </LinearLayout>
     <LinearLayout
         android:id="@+id/list_drawer"
-        android:layout_width="230dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp"
         android:layout_gravity="right"

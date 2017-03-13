@@ -487,7 +487,7 @@ public class MatchesFragment extends Fragment {
                         // Toast.makeText(getContext(), response, Toast.LENGTH_LONG).show();
                         try {
                             rl_matches_list.setVisibility(View.VISIBLE);
-                            Log.i("HH", "strResp : " + response);
+                            Log.i("HH_matches", "strResp : " + response);
                             ArrayList<RecyclerBean> beanArrayList = new ArrayList<RecyclerBean>();
 
                             JSONObject jsobj = new JSONObject(response);

@@ -204,6 +204,7 @@ public class InboxFragment extends android.support.v4.app.Fragment {
                                                 + matchesJSONObj.getString("height") +
                                                 "\n" + matchesJSONObj.getString("caste") +
                                                 "," + matchesJSONObj.getString("religion"));
+
                                         if(matchesJSONObj.getString("intereststatus")!=""){
                                             drawerBean.setStr_acceptReject(matchesJSONObj.getString("intereststatus"));
                                             Log.i("NN", "int_status-->"+matchesJSONObj.getString("intereststatus"));
@@ -260,7 +261,7 @@ public class InboxFragment extends android.support.v4.app.Fragment {
 
                                 //   Toast.makeText(getActivity(), "res : " + res, Toast.LENGTH_LONG).show();
 
-// Now you can use any deserializer to make sense of data
+                                // Now you can use any deserializer to make sense of data
                                 JSONObject obj = new JSONObject(res);
                             } catch (UnsupportedEncodingException e1) {
 // Couldn't properly decode data to string
@@ -277,12 +278,12 @@ public class InboxFragment extends android.support.v4.app.Fragment {
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
 
-//username=sathish@ansjad.com&password=testing
+                //username=sathish@ansjad.com&password=testing
                 Log.e("NN:in", str_user_id);
                 params.put("userid", str_user_id);
 
 
-// params.put("username", "dineshW@adjhd.com");
+        // params.put("username", "dineshW@adjhd.com");
 // params.put("password", "123456");
                 return params;
             }
@@ -294,17 +295,15 @@ public class InboxFragment extends android.support.v4.app.Fragment {
                         "Authorization",
                         String.format("Basic %s", Base64.encodeToString(
                                 String.format("%s:%s", "admin", "EasyMarry2016").getBytes(), Base64.DEFAULT)));
-    // params.put("Content-Type", "application/json; charset=utf-8");
+                // params.put("Content-Type", "application/json; charset=utf-8");
                 return params;
             }
 
         };
 
-//30Secs
+        //30Secs
         RetryPolicy policy = new DefaultRetryPolicy(30000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
         stringRequest.setRetryPolicy(policy);
-
-
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         requestQueue.add(stringRequest);
 

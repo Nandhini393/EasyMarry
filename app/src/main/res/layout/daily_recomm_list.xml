@@ -93,7 +93,7 @@
 
     <LinearLayout
         android:id="@+id/llayslider"
-        android:layout_width="270dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:background="#f8f8f8"
@@ -534,6 +534,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:orientation="horizontal">

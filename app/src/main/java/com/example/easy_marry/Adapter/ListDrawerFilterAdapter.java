@@ -101,11 +101,14 @@ public class ListDrawerFilterAdapter extends BaseAdapter {
                 al_habits_all.add(listDrawerBean.getStr_list_items_id());
             }
             if (strEditCheckedVal != null) {
+
                 if (Action.equalsIgnoreCase("edit")) {
                     Log.i("RJ", "EDIT : 1");
                     Log.i("RJ", "strEditCheckedVal :" + strEditCheckedVal);
 
+
                     if (strEditCheckedVal.length() > 1) {
+
                         Log.i("RJ", "EDIT :2 ");
                         String[] ss = strEditCheckedVal.split(",");
                         Log.i("RJ", "EDIT : 3");
@@ -131,6 +134,8 @@ public class ListDrawerFilterAdapter extends BaseAdapter {
 
                             }
                         }
+
+
 
                     } else {
 
@@ -225,7 +230,7 @@ public class ListDrawerFilterAdapter extends BaseAdapter {
                         hsMap.remove(listDrawerBean.getStr_list_items_id());
                         Log.i("NN", "hash-> : " + hsMap);
                         Log.i("NN", "hash_removed-> : " + listDrawerBean.getStr_list_items_id());
-                        myInterface.filter_Check(hsMap,listDrawerBean.getStr_list_items_id());
+                        myInterface.filter_Check(hsMap,listDrawerBean.getStr_list_items_id(),strEditIdentify);
                     }
 
                 }

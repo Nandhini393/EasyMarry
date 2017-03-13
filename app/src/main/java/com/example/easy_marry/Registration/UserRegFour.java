@@ -1250,7 +1250,7 @@ public class UserRegFour extends Activity implements MyInterface {
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal, String strIdentify) {
         return null;
     }
 

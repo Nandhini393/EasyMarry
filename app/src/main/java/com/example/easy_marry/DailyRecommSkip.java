@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.easy_marry.genericclasses.GeneralData;
 import com.example.easy_marry.swibetabs.Matches;
@@ -43,7 +44,7 @@ public class DailyRecommSkip extends Activity {
     // milliseconds
     private long timeBlinkInMilliseconds; // start time of start blinking
     private boolean blink; // controls the blinking .. on and off
-ImageView img_back;
+    ImageView img_back;
     int str_remain_min;
     GeneralData gD;
     Context ctx;
@@ -134,6 +135,7 @@ img_back=(ImageView)findViewById(R.id.menu);
       DailyRecommSkip.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                Toast.makeText(DailyRecommSkip.this, "Hii**", Toast.LENGTH_SHORT).show();
                 Calendar calander = Calendar.getInstance();
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
                 String time = simpleDateFormat.format(calander.getTime());
@@ -156,6 +158,7 @@ img_back=(ImageView)findViewById(R.id.menu);
     }
 
     private void startTimer() {
+        Toast.makeText(DailyRecommSkip.this, "Hii", Toast.LENGTH_SHORT).show();
         countDownTimer = new CountDownTimer(totalTimeCountInMilliseconds, 1000) {
             // 500 means, onTick function will be called at every 500
             // milliseconds
@@ -164,8 +167,7 @@ img_back=(ImageView)findViewById(R.id.menu);
             public void onTick(long leftTimeInMilliseconds) {
                 long seconds = leftTimeInMilliseconds / 1000;
 
-                Log.e("LOX", "one-->"+String.valueOf(seconds));
-                Log.e("LOX", "two-->"+String.valueOf(String.format("%02d", seconds % 60)));
+
                 //i++;
                 //Setting the Progress Bar to decrease wih the timer
                 mProgressBar.setMax(60);

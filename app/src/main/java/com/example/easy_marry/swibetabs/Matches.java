@@ -61,6 +61,7 @@ import com.example.easy_marry.Bean.ListDrawerBean;
 import com.example.easy_marry.Bean.RecyclerBean;
 import com.example.easy_marry.DailyRecommSkip;
 import com.example.easy_marry.FilterPage;
+import com.example.easy_marry.FilterPageTest;
 import com.example.easy_marry.Horoscope.AddHoroscope;
 import com.example.easy_marry.Bean.GridBean;
 import com.example.easy_marry.DailyRecomViewProfie;
@@ -309,6 +310,7 @@ TextView txt_copyright;
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(Matches.this, FilterPage.class));
+                    finish();
                 }
             });
 
@@ -353,7 +355,7 @@ TextView txt_copyright;
                 }
             });
 
-//messenger
+            //messenger
 
             img_messenger = (ImageView) findViewById(R.id.chat_bub);
             img_messenger.setOnClickListener(new View.OnClickListener() {
@@ -380,7 +382,6 @@ TextView txt_copyright;
             feedbackLayout.setOnClickListener(this);
             searchLayout.setOnClickListener(this);
             addhoroLAyout.setOnClickListener(this);
-
             btn_rate.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -1049,6 +1050,7 @@ TextView txt_copyright;
                     prefEdit.putString("filter_json", null);
                     prefEdit.commit();
                     finish();
+                    finishAffinity();
                     isClosed = true;
                 }
             });
@@ -1140,6 +1142,7 @@ TextView txt_copyright;
         } else if (str_type.equalsIgnoreCase("view_profile")) {
 
             viewProfileCall(str_user_id, str_partner_name, str_partner_id);
+            Log.e("PPP","hello view profile");
 
         }
 
@@ -1152,7 +1155,7 @@ TextView txt_copyright;
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal, String strIdentify) {
         return null;
     }
 

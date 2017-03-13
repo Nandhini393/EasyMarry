@@ -82,6 +82,7 @@
                 android:hint="Write your feedback here.."
           android:paddingLeft="10dp"
                 android:gravity="top"
+                android:textCursorDrawable="@drawable/cursor_color"
                 android:paddingTop="10dp"
                 android:inputType="textMultiLine"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
@@ -197,7 +198,7 @@ android:layout_marginLeft="20dp"
 </LinearLayout>
     <LinearLayout
         android:id="@+id/llayslider"
-        android:layout_width="270dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:background="#f8f8f8"

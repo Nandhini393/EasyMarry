@@ -983,7 +983,7 @@ public class DailyRecommList extends Activity implements View.OnClickListener, M
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal, String strIdentify) {
         return null;
     }
 

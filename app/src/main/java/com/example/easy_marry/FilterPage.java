@@ -204,6 +204,7 @@ public class FilterPage extends Activity implements MyInterface {
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(FilterPage.this,Matches.class));
                 finish();
             }
         });
@@ -1423,13 +1424,17 @@ public class FilterPage extends Activity implements MyInterface {
                 ll_drawer_rad_chk.setVisibility(View.VISIBLE);
 
 
-
                 str_state_id = gD.prefs.getString("state_id", null);
                 txt_state.setText(gD.prefs.getString("state", null));
                 //txt_state.setTag(gD.prefs.getString("state_tag", null));
 
+                if (str_state_id != null) {
+                    Log.e("BN", str_state_id);
+                }
+                else{
+                    Log.e("BN", "state_id is null");
+                }
 
-                Log.e("BN", str_state_id);
                 Log.e("BN_", "com_ary2->" + jsonArray_state);
                 if (txt_state.getText().toString().trim().length() > 0) {
                     if (my_count == 0) {
@@ -1465,6 +1470,7 @@ public class FilterPage extends Activity implements MyInterface {
                         my_count = 1;
                     }
                 }
+
 
 
                 et_search.addTextChangedListener(new TextWatcher() {
@@ -1521,8 +1527,13 @@ public class FilterPage extends Activity implements MyInterface {
                 str_city_id = gD.prefs.getString("city_id", null);
                 txt_city.setText(gD.prefs.getString("city", null));
                 // txt_city.setTag(gD.prefs.getString("city_tag", null));
+                if (str_city_id != null) {
+                    Log.e("BN", str_city_id);
+                }
+                else{
+                    Log.e("BN", "str_city_id is null");
+                }
 
-                Log.e("BN", str_city_id);
                 Log.e("BN_", "com_ary2->" + jsonArray_city);
                 if (txt_city.getText().toString().trim().length() > 0) {
                     if (my_count == 0) {
@@ -2175,7 +2186,6 @@ public class FilterPage extends Activity implements MyInterface {
 
                                 }
 
-
                                 restCallForStateCity(GeneralData.LOCAL_IP + "caste.php", str_religion_id, "religionid", "");
 
                             } else if (str_list_from.equalsIgnoreCase("caste")) {
@@ -2197,6 +2207,15 @@ public class FilterPage extends Activity implements MyInterface {
                                 Log.e("Na", "mother_ton-->" + str_mother_ton_id);
                                 Log.e("Na", "mother_ton-->" + val);
                             } else if (str_list_from.equalsIgnoreCase("country")) {
+
+                          /*     txt_state.setText("");
+                                txt_city.setText("");
+                                prefEdit.putString("state_id", null);
+                                prefEdit.putString("state", null);
+
+                                prefEdit.putString("city_id", null);
+                                prefEdit.putString("city", null);*/
+
                                 prefEdit.putString("country_id", id);
                                 prefEdit.putString("country", val);
                                 // prefEdit.putString("country_tag", id);
@@ -2417,7 +2436,8 @@ public class FilterPage extends Activity implements MyInterface {
                     prefEdit.commit();
                     Log.e("LO", "height_to" + str_to_age);
 
-                } else {
+                } else
+                {
                     strSpinsp_to = strItems;
                     str_to_age = String.valueOf(position);
                     str_age_to_id = strItems_Id;
@@ -2491,7 +2511,6 @@ public class FilterPage extends Activity implements MyInterface {
                     prefEdit.commit();
                 }
 
-
             }
         });
         img_cross1.setOnClickListener(new View.OnClickListener() {
@@ -2564,8 +2583,6 @@ public class FilterPage extends Activity implements MyInterface {
                 hsFilterGmap = str_json_obj;
                 Log.e("NN:fc", String.valueOf(hsFilterGmap));
                 strSpinType = "";
-
-
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -2581,8 +2598,9 @@ public class FilterPage extends Activity implements MyInterface {
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal, String str_removedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal, String str_removedVal, String strIdentify) {
         try {
+            Log.e("NN:UN", "strIdentify=>" +strIdentify);
             // alCheckedItems.add(new JSONObject(str_json_obj));
             if (strVal != null) {
                 str_RemoveVal = str_removedVal;
@@ -2594,7 +2612,8 @@ public class FilterPage extends Activity implements MyInterface {
                     Log.e("NN:fc1", String.valueOf(hsFilterGmap));
                 }
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -2862,7 +2881,9 @@ public class FilterPage extends Activity implements MyInterface {
                                         drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "edit", "checkbox", str_state_id);
                                         list_drawer.setAdapter(drawerFilterAdapter);
                                         drawerFilterAdapter.notifyDataSetChanged();
-                                    } else {
+                                    }
+
+                                    else {
                                         drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "edit", "checkbox", strVar);
                                         list_drawer.setAdapter(drawerFilterAdapter);
                                         drawerFilterAdapter.notifyDataSetChanged();
@@ -2906,7 +2927,9 @@ public class FilterPage extends Activity implements MyInterface {
                                         drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "edit", "checkbox", str_city_id);
                                         list_drawer.setAdapter(drawerFilterAdapter);
                                         drawerFilterAdapter.notifyDataSetChanged();
-                                    } else {
+                                    }
+
+                                    else {
                                         drawerFilterAdapter = new ListDrawerFilterAdapter(context, beanArrayList, (MyInterface) context, "edit", "checkbox", strVar);
                                         list_drawer.setAdapter(drawerFilterAdapter);
                                         drawerFilterAdapter.notifyDataSetChanged();

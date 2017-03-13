@@ -106,7 +106,8 @@ public class RecyclerMailNewAdapter extends RecyclerView.Adapter<RecyclerMailNew
                         btn_reject.setBackgroundColor(Color.parseColor("#80fb7b09"));
                         btn_reject.setTextColor(Color.parseColor("#fffafa"));
                     }
-                        btn_accept.setOnClickListener(new View.OnClickListener() {
+
+                    btn_accept.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
 
@@ -349,7 +350,15 @@ public class RecyclerMailNewAdapter extends RecyclerView.Adapter<RecyclerMailNew
 
         String str_date_time = recyclerBean.getStr_date_time();
         Long vv = calDay(str_date_time);
+        Log.e("DAYS", "days->" + vv);
         holder.txt_days.setText("(" + vv + " days)");
+      /*  if(vv.equals("0")){
+            holder.txt_days.setText("(today)");
+        }
+        else{
+            holder.txt_days.setText("(" + vv + " days)");
+        }
+*/
 
         if (strFROM.equalsIgnoreCase("inbox")) {
             String str_mail_type = recyclerBean.getStr_mail_type();

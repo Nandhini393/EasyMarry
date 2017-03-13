@@ -894,7 +894,7 @@ android:visibility="gone"
 
     <LinearLayout
         android:id="@+id/llaySliderParent"
-        android:layout_width="270dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="right"
         android:clickable="false"

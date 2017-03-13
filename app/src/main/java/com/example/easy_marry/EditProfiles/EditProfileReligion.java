@@ -810,6 +810,20 @@ public class EditProfileReligion extends Activity implements MyInterface {
         JSONObject jsobj = null;
         try {
             if (providerServicesMonth.length() > 0) {
+
+              /*  if(str_from.equalsIgnoreCase("user")){
+                    ListDrawerBean drawerBean1 = new ListDrawerBean();
+                    drawerBean1.setStr_list_items_id("111");
+                    drawerBean1.setStr_list_items("-select-");
+                    beanArrayList.add(drawerBean1);
+                }
+                else  if(str_from.equalsIgnoreCase("partner")){
+                    ListDrawerBean drawerBean1 = new ListDrawerBean();
+                    drawerBean1.setStr_list_items_id("0");
+                    drawerBean1.setStr_list_items("Any");
+                    beanArrayList.add(drawerBean1);
+                }
+*/
                 for (int i = 0; i < providerServicesMonth.length(); i++) {
                     ListDrawerBean drawerBean = new ListDrawerBean();
                     jsobj = providerServicesMonth.getJSONObject(i);
@@ -1116,7 +1130,7 @@ public class EditProfileReligion extends Activity implements MyInterface {
     }
 
     @Override
-    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal) {
+    public HashMap<String, JSONObject> filter_Check(HashMap<String, JSONObject> strVal,String strRemovedVal, String strIdentify) {
         return null;
     }
 
